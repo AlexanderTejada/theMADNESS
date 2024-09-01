@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournament</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="stylesT.css">
+  <link rel="stylesheet" href="navbar2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Meta etiquetas para SEO -->
+  <meta name="description" content="The Madness of Billiards es un emocionante juego de billar con un toque de fantasía. Disponible en Android y App Store.">
+  <meta name="keywords" content="billar, juego de billar, fantasía, Android, App Store, The Madness of Billiards, juego móvil, mobile game, Billiards , Billiards , pool">
+  <meta name="author" content="The madness of Billiards ">
+  <meta name="robots" content="index, follow">
+
+  <!-- Meta etiquetas Open Graph para redes sociales (Meta) -->
+  <meta property="og:title" content="The Madness of Billiards - El juego de billar con fantasía">
+  <meta property="og:description" content="Disfruta de un emocionante juego de billar con un toque único de fantasía. ¡Disponible en Android y App Store!">
+  <meta property="og:image" content="URL_de_tu_imagen_para_redes_sociales.jpg">
+  <meta property="og:url" content="https://themadnessofbilliards.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card para compartir en Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Madness of Billiards - El juego de billar con fantasía">
+  <meta name="twitter:description" content="The Madness of Billiards es un emocionante juego de billar con un toque de fantasía. Disponible en Android y App Store.">
+  <meta name="twitter:image" content="URL_de_tu_imagen_para_redes_sociales.jpg">
+  <meta name="twitter:site" content="@tu_cuenta_de_twitter">
+
+  <!-- Etiquetas adicionales para SEO -->
+  <link rel="canonical" href="https://themadnessofbilliards.com/">
+  <meta name="theme-color" content="#ff9c00"> <!-- Color del navegador en dispositivos móviles -->
+  <!-- Scripts para partículas -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  
+</head>
+
+
+<body>
+  <audio id="welcome-sound" src="audio/Goblin Laughter 3.wav" preload="auto" loop></audio>
+
+  <div id="particles-js"></div>
+
+  <header class="bgh">
+    <nav>
+      <ul class='nav-bar'>
+        <input type='checkbox' id='check' />
+        <label style="margin-top: 20px;" for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        <span class="menu">
+          <li><a href="index.html"><strong> HOME </strong></a></li>
+          <li><a href="tournament.html"><strong> TOURNAMENT</strong></a></li>
+          <li><a href="Terms of Use and Privacy Policy.html"><strong>TERMS & PRIVACY</strong></a></li>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+      </ul>
+    </nav>
+
+    
+    <div class="header-content">
+      <div class="text-section">
+        <h1>OVER $6,200 IN PRIZES</h1>
+        <p> Welcome to The Madness of Billiards. Today, I want to invite you to participate in our first tournament with exceptional prizes, ranging from a $300 USD Amazon gift card to a $1,600 USD Apple gift card.</p>
+      </div>
+      <div class="logo-section">
+        <img src="img/logo-izquierda.png" alt="Logo The Madness of Billiards">
+      </div>
+    </div>
+  </header>
+
+<section class="premios">
+  <h3>THE PRIZES WILL BE AWARDED BASED ON THE GLOBAL RANKING IN THE GAME</h3>
+  <div class="premios-grid">
+    <!-- Premios -->
+    <div class="premio">
+      <img src="img/1600apple.png" alt="Apple $1600">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/1200apple.png" alt="Apple $1200">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/900apple.png" alt="Apple $900">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/700amazon.png" alt="Amazon $700">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/600amazon.png" alt="Amazon $600">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/500amazon.png" alt="Amazon $500">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/400amazon.png" alt="Amazon $400">
+      <div class="fire-effect"></div>
+    </div>
+    <div class="premio">
+      <img src="img/300amazon.png" alt="Amazon $300">
+      <div class="fire-effect"></div>
+    </div>
+  </div>
+</section>
+
+  <section class="reglas">
+    <h3>In the event of a tie</h3>
+    <p>In the event of a tie, the prize will be divided among the tied players...</p>
+    <a href="#" class="button">Read the full rules here</a>
+  </section>
+
+  <!-- Modal Structure -->
+  <div id="rulesModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Full Tournament Rules</h2>
+      <h1>Welcome to The Madness of Billiards</h1>
+    <p>Today, I want to invite you to participate in our first tournament with exceptional prizes, ranging from a $300 USD Amazon gift card to a $1,600 USD Apple gift card.</p>
+
+    <h2>Here are the rules:</h2>
+    <p>In multiplayer ranking mode, every match you win or lose will affect your points and determine your position in the global ranking.</p>
+    <p>In each match, you must bring three minions. Each minion has unique abilities, and finding the perfect combination will be key to your victory. Additionally, select a Cue that gives you an advantage with each shot and an Avatar that represents you.</p>
+
+    <h3>Once in the match, there are four ways to win:</h3>
+    <ol>
+        <li>Pocket all your assigned balls, leaving the 8-ball for last.</li>
+        <li>Wait for your opponent to pocket the 8-ball prematurely.</li>
+        <li>And the most strategic! Protect your heart's health. On each turn, you'll see stones blocking the pockets, and from each pocket, a minion of your opponent will emerge to attack your heart. If your heart's health reaches 0, you’ll lose the match!</li>
+        <li>If your opponent surrenders or abandons the match.</li>
+    </ol>
+
+    <h2>'The Madness of Billiards' Qualifying Tournament and Championship</h2>
+
+    <h3>Qualifying Tournament:</h3>
+    <p>The qualifying tournament will begin on October 1 and end on December 16. The top 32 players with the highest scores will advance to the main championship, which will be broadcast live on Twitch. This championship will conclude on January 10, where the top 8 players will be determined and awarded prizes.</p>
+
+    <h3>Tournament Structure and Prizes</h3>
+
+    <h4>Initial Classification:</h4>
+    <p>The top 32 players with the highest scores will advance to the main championship.</p>
+
+    <h4>Elimination Phase:</h4>
+    <p>In the championship, players will compete in direct elimination rounds. In each round, half of the players will be eliminated until the championship winner is determined.</p>
+    <p>Positions 3 to 8 will be assigned based on the score obtained in the qualifying round. In the event of a tie, an additional match will be organized, which will be broadcast live, to determine the final position.</p>
+
+    <h4>Prizes:</h4>
+    <p>The 8 players who reach the final phase will receive prizes, with the highest positions receiving the most valuable rewards.</p>
+
+    <h2>'The Madness of Billiards' Championship</h2>
+
+    <h3>Championship Start:</h3>
+    <p>The championship will begin on December 18, with player matchups randomly determined and published on the game's social media. Matches will be played in friendly mode.</p>
+
+    <h3>Tournament Format:</h3>
+
+    <h4>Matches:</h4>
+    <p>Players will compete in a best-of-three format. If each player wins one match, a third match will be played to determine who advances to the next round.</p>
+
+    <h4>Dates and Rounds:</h4>
+    <ul>
+        <li>December 18: Round of 32 players.</li>
+        <li>December 19: Round of 16 players.</li>
+        <li>December 20: Round of 8 players.</li>
+        <li>December 21: Semifinals and Final.</li>
+    </ul>
+
+    <h2>Participation Rules</h2>
+
+    <h3>Absences:</h3>
+    <p>The absence of a player from their scheduled match will result in automatic disqualification, allowing their opponent to advance to the next round.</p>
+
+    <h3>Schedule and Attendance:</h3>
+    <p>Match schedules will be published for all players, who must be present 15 minutes before the scheduled time. Failure to attend at the scheduled time will result in disqualification.</p>
+
+    <h3>Broadcasting:</h3>
+    <p>All matches will be streamed live on Twitch. Players are not required to have a camera or microphone; they just need to be present and ready to play.</p>
+
+    <h2>Prizes and Total:</h2>
+    <p>The available prizes in U.S. dollars are as follows:</p>
+    <ol>
+        <li>Apple Gift Card of $1,600</li>
+        <li>Apple Gift Card of $1,200</li>
+        <li>Apple Gift Card of $900</li>
+        <li>Amazon Gift Card of $700</li>
+        <li>Amazon Gift Card of $600</li>
+        <li>Amazon Gift Card of $500</li>
+        <li>Amazon Gift Card of $400</li>
+        <li>Amazon Gift Card of $300</li>
+    </ol>
+    <p>Total Prize Amount: $6,200 USD.</p>
+
+    <h2>Prize Delivery Policies for "THE MADNESS OF BILLIARDS"</h2>
+
+    <h3>Special Conditions:</h3>
+    <p>Friendly matches will not affect your score; only competitive matches will count towards your ranking.</p>
+
+    <h3>Score Calculation:</h3>
+    <p>Before each match, the probability of winning is calculated based on your current score and that of your opponent. If you win, your score will increase; if you lose, it will decrease.</p>
+
+    <h3>Score Adjustment:</h3>
+    <p>The number of points you gain or lose will depend on whether you won or lost, and the initial probability of winning. After each match, your score will be updated to reflect your performance in the tournament.</p>
+
+    <h2>Competition Period and Prize Rules</h2>
+
+    <h3>Ranking Reset:</h3>
+    <p>Rankings accumulated from the game's launch until October 1, 2024, will not be considered for prize distribution and will be reset.</p>
+
+    <h3>Prize Eligibility:</h3>
+    <p>Prizes will only be awarded to players who are 18 years or older. If the player is under 18, they must be represented by a legal guardian to claim the prize. A valid passport is required as identification; no other forms of identification will be accepted.</p>
+
+    <h2>Prize Claim Procedure</h2>
+
+    <h3>Notification and Required Documentation:</h3>
+    <p>On December 23, 2024, an email will be sent to the winners with detailed instructions on how to claim their prizes, which will be Apple or Amazon gift cards. Winners must reply to this email using the email address registered in the game, attaching a copy of their passport. The subject line of the email must include their name as it appears in the game.</p>
+    <p>Winners have 15 calendar days from the receipt of the email to send the required documentation. Failure to respond within this period will result in forfeiture of the prize.</p>
+
+    <h3>Submission of Documentation:</h3>
+    <p>To receive the prize, winners must:</p>
+    <ul>
+        <li>Reply to the email received from <a style="color: goldenrod;" href="mailto:ceo@themadnessofbilliards.com">ceo@themadnessofbilliards.com</a> or send an email to the same address using the email registered in the game.</li>
+        <li>Attach a scanned copy of a valid passport confirming they are over 18 years old. Failure to provide this document will result in disqualification.</li>
+        <li>Include their name in the email subject line as it appears in the game.</li>
+    </ul>
+    <p>If the winner is underage, a legal guardian must provide the passport.</p>
+
+    <h2>Liability and Waiver:</h2>
+
+    <h3>Waiver of Liability:</h3>
+    <p>By participating in the contest and accepting the prize, winners release "THE MADNESS OF BILLIARDS" from any legal responsibility or claims related to the delivery and receipt of the prize. The receipt of a passport copy will be handled confidentially and used solely to verify that the winner is of legal age and to confirm eligibility for receiving the prize. This documentation will not be used for any other purpose.</p>
+    <p>By submitting the required documentation, winners accept and release "THE MADNESS OF BILLIARDS" from any legal liability related to the prize and waive any legal disputes or claims associated with the prize delivery process. This waiver includes, but is not limited to, any claims for loss, damage, or errors in the prize transaction.</p>
+
+    <h3>Publication of Winners:</h3>
+    <p>The names of the winners will be published on the "THE MADNESS OF BILLIARDS" social media channels in descending order, from first place to tenth place. Only the player's name will be published, with no additional details.</p>
+      <!-- Modal Content Continues -->
+    </div>
+  </div>
+
+  <script src="scriptModal.js"></script>
+  <script src="script.js"></script>
+   <!-- Configuración de partículas -->
+  <script src="particles.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.logo-derecha a').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevenir la navegación por defecto
+
+    // Reproduce el sonido
+    const audio = document.getElementById('welcome-sound');
+    audio.play().catch(error => {
+      console.log('Error al reproducir el sonido:', error);
+    });
+
+    // Guarda la URL de destino en localStorage
+    localStorage.setItem('redirectUrl', e.target.closest('a').href);
+    
+    // Redirige después de un breve retraso
+    setTimeout(() => {
+      window.location.href = localStorage.getItem('redirectUrl');
+      localStorage.removeItem('redirectUrl'); // Limpia la URL después de redirigir
+    }, audio.duration * 1000); // Redirige después de la duración del sonido
+  });
+});
+</script>
+</body>
+
+</html>

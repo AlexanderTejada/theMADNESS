@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Importación de la fuente Bebas Neue desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Estilos globales */
+body {
+    --color1: #ffffffb4; /* Color del texto principal */
+    --color2: #000; /* Color de fondo */
+    --hover-color: #FFA500; /* Color de hover */
+    font-family: "Bebas Neue", sans-serif; /* Aplicar la fuente Bebas Neue */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos para la barra de navegación */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 30px;
+    margin-bottom: 6%;
+}
+
+/* Estilos para el cuerpo cuando el menú está abierto */
+body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 40px;
+}
+
+/* Estilos para el menú */
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+    /* Aplicar la fuente Bebas Neue a los elementos de lista del menú */
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    /* Aplicar la fuente Bebas Neue a los enlaces del menú */
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.menu li a:hover {
+    color: var(--hover-color); /* Cambia el color del texto al hacer hover */
+}
+
+/* Estilos para los íconos del menú */
+.open-menu, .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+/* Estilos para el checkbox usado en la funcionalidad del menú móvil */
+#check {
+    display: none;
+}
+
+/* Estilos para pantallas pequeñas (menú móvil) */
+@media (max-width: 610px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 100vw; /* Mueve el menú fuera de la vista por defecto */
+        z-index: 100;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.842);
+        transition: all 0.3s ease-in-out; /* Transición suave */
+        visibility: hidden; /* Oculta el menú por defecto */
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+        visibility: visible; /* Muestra el menú cuando el checkbox está marcado */
+    }
+}
