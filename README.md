@@ -1,7 +1,7 @@
 https://the-madness.vercel.app/
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/2bd06546-b24c-44ef-8256-45f5ea598223">
 
-🛡️ Content Protection Policies[TMOB.webm](https://github.com/user-attachments/assets/6f1f245e-e539-4051-ba5e-6200db01a09b)
-
+🛡️ Content Protection Policies
 1. Intellectual Property
 Ownership: All images, videos, and other multimedia content associated with this project are the intellectual property of The Madness of Billiards. Unauthorized use, reproduction, or distribution of this content is strictly prohibited.
 2. Usage Rights
