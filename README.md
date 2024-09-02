@@ -1,5 +1,5 @@
 https://the-madness.vercel.app/
-<img width="950" alt="image" src="https://github.com/user-attachments/assets/2bd06546-b24c-44ef-8256-45f5ea598223">
+![gf](https://github.com/user-attachments/assets/82c78bb0-3133-4387-a564-f6f1bb36c754)
 
 🛡️ Content Protection Policies
 1. Intellectual Property
