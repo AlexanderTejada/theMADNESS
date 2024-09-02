@@ -13,8 +13,8 @@
   <link rel="manifest" href="/site.webmanifest">
   
   <!-- Estilos -->
-  <link rel="stylesheet" href="stylesT.css">
-  <link rel="stylesheet" href="navbar2.css">
+  <link rel="stylesheet" href="css/stylesT.css">
+  <link rel="stylesheet" href="css/navbar2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Meta etiquetas para SEO -->
@@ -44,7 +44,6 @@
   <!-- Scripts para partículas -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-  
 </head>
 
 
@@ -66,8 +65,6 @@
         </span>
       </ul>
     </nav>
-
-    
     <div class="header-content">
       <div class="text-section">
         <h1>OVER $6,200 IN PRIZES</h1>
@@ -82,7 +79,7 @@
 <section class="premios">
   <h3>THE PRIZES WILL BE AWARDED BASED ON THE GLOBAL RANKING IN THE GAME</h3>
   <div class="premios-grid">
-    <!-- Premios -->
+    <!-- prizes -->
     <div class="premio">
       <img src="img/1600apple.png" alt="Apple $1600">
       <div class="fire-effect"></div>
@@ -246,35 +243,13 @@
 
     <h3>Publication of Winners:</h3>
     <p>The names of the winners will be published on the "THE MADNESS OF BILLIARDS" social media channels in descending order, from first place to tenth place. Only the player's name will be published, with no additional details.</p>
-      <!-- Modal Content Continues -->
     </div>
   </div>
 
-  <script src="scriptModal.js"></script>
-  <script src="script.js"></script>
-   <!-- Configuración de partículas -->
-  <script src="particles.js"></script>
-<script>document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.logo-derecha a').addEventListener('click', (e) => {
-    e.preventDefault(); // Prevenir la navegación por defecto
+  <script src="js/scriptModal.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/particles.js"></script>
 
-    // Reproduce el sonido
-    const audio = document.getElementById('welcome-sound');
-    audio.play().catch(error => {
-      console.log('Error al reproducir el sonido:', error);
-    });
-
-    // Guarda la URL de destino en localStorage
-    localStorage.setItem('redirectUrl', e.target.closest('a').href);
-    
-    // Redirige después de un breve retraso
-    setTimeout(() => {
-      window.location.href = localStorage.getItem('redirectUrl');
-      localStorage.removeItem('redirectUrl'); // Limpia la URL después de redirigir
-    }, audio.duration * 1000); // Redirige después de la duración del sonido
-  });
-});
-</script>
 </body>
 
 </html>
