@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #ffa6007f;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #111111;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #ffa600d7;
+}
+.update {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.update h2 {
+    color: #ffa600d7;
+    margin-bottom: 10px;
+}
+.update p {
+    margin: 5px 0;
+}
+.update-date {
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+.version {
+    color: #ffa600d7;
+    font-weight: bold;
+}

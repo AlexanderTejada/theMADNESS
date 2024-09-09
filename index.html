@@ -48,6 +48,14 @@
 </head>
 
 <body>
+
+  <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.9); color: white; padding: 15px; text-align: center; z-index: 9999;">
+    <p>We use cookies to improve your experience. By continuing to browse, you accept our use of cookies. <a href="privacyPolicy.html" style="color: #ff9c00;">Privacy Policy</a></p>
+    <button id="accept-cookies" style="padding: 10px 20px; background-color: #ff9c00; color: white; border: none; cursor: pointer;">Accept</button>
+    <button id="reject-cookies" style="padding: 10px 20px; background-color: rgba(0, 213, 255, 0.477); color: white; border: none; cursor: pointer;">Reject</button>
+</div>
+
+
   <audio id="welcome-sound" src="audio/Goblin Laughter 3.wav" preload="auto"></audio>
   <div id="particles-js"></div>
 
@@ -66,7 +74,9 @@
           <span class="menu">
             <li><a href="index.html"><strong>HOME</strong></a></li>
             <li><a href="tournament.html"><strong> TOURNAMENT</strong></a></li>
-            <li><a href="Terms of Use and Privacy Policy.html"><strong>TERMS & PRIVACY</strong></a></li>
+            <li><a href="Terms of Use.html"><strong>TERMS OF USE</strong></a></li>
+            <li><a href="privacyPolicy.html"><strong>PRIVACY POLICY</strong></a></li>
+            <li><a href="updates.html"><strong>UPDATES</strong></a></li>    
             <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
           </span>
         </ul>
@@ -214,6 +224,46 @@
   });
 });
 
+
+  // Función para crear una cookie
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  }
+
+  // Función para obtener una cookie
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  // Mostrar el banner si la cookie de consentimiento no está configurada
+  window.onload = function () {
+    if (!getCookie("cookiesAccepted")) {
+      document.getElementById("cookie-banner").style.display = "block";
+    }
+
+    // Manejar el clic en el botón de aceptación
+    document.getElementById("accept-cookies").onclick = function () {
+      setCookie("cookiesAccepted", "true", 365);
+      document.getElementById("cookie-banner").style.display = "none";
+    };
+
+    // Manejar el clic en el botón de rechazo
+    document.getElementById("reject-cookies").onclick = function () {
+      setCookie("cookiesAccepted", "false", 365);
+      document.getElementById("cookie-banner").style.display = "none";
+      alert("Has rechazado el uso de cookies no esenciales.");
+    };
+  };
   </script>
   
   <script src="js/particles2.js"></script>
